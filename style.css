@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(3, 27, 43);
+}
+.cardbox {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+}
+.cardbox .color {
+  height: 100%;
+  width:30%;
+  margin: auto;
+  animation: anime 3s linear infinite;
+  transition: 0.3s;
+}
+@keyframes anime {
+  to {
+    transform: rotate(0deg);
+    background-image: linear-gradient(rgb(15, 255, 23), rgb(255, 22, 236));
+
+  }
+  from {
+    transform: rotate(360deg);
+    background-image: linear-gradient(rgb(255, 227, 15), rgb(22, 158, 255));
+  }
+}
+.cardbox .cardpic {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding:4px;
+}
+.cardbox .cardpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: rgb(3, 27, 43);
+  padding: 10px;
+}
+.cardbox .cardinfo {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding:4px;  
+    display: none;
+}
+.cardbox .cardinfo .box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: rgb(3, 27, 43);
+    padding: 40px;
+    text-align: center;
+    color: rgb(206, 206, 206);
+    overflow: hidden;
+}
+.cardbox .cardinfo .box .name {
+    padding-bottom: 20px;
+    
+    padding-top: 20px;
+}
+.cardbox .cardinfo .box .name span{
+font-size: 1.5rem;
+font-weight: 600;
+}
+.cardbox .cardinfo .box .title {
+    padding-bottom: 35px;
+}
+.cardbox .cardinfo .box .title span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: aquamarine;
+}
+.cardbox .cardinfo .box .link {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    padding: 10px 30px;
+    background: rgb(228, 228, 228);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-bottom: 2px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+.cardbox .cardinfo .box .link:hover {
+letter-spacing: 2px;
+}
+.sociallinks{
+margin: 20px auto;
+    width: 70%;
+height: 30px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.sociallinks a{
+  
+    
+}
+.sociallinks a ion-icon{
+    color: rgb(230, 251, 251);
+    font-size: 1.5rem;
+ }
+ .sociallinks a ion-icon:hover{
+     color: rgb(16, 255, 239);
+ }
